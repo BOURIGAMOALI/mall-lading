@@ -1,0 +1,79 @@
+/* Styles for the cube */
+.feature {
+    position: relative;
+    width: 240px; /* Adjust width to make the cube larger */
+    height: 240px; /* Adjust height to make the cube larger */
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+    margin: 20px; /* Added margin for better separation */
+  }
+  
+  .feature:hover {
+    transform: rotateY(180deg);
+  }
+  
+  .feature .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  .feature .face h3 {
+    margin: 0;
+  }
+  
+  .feature .front {
+    transform: translateZ(100px);
+  }
+  
+  .feature .back {
+    transform: rotateY(180deg) translateZ(100px);
+  }
+  
+  .feature .right {
+    transform: rotateY(90deg) translateZ(100px);
+  }
+  
+  .feature .left {
+    transform: rotateY(-90deg) translateZ(100px);
+  }
+  
+  .feature .top {
+    transform: rotateX(90deg) translateZ(100px);
+  }
+  
+  .feature .bottom {
+    transform: rotateX(-90deg) translateZ(100px);
+  }
+  
+  /* Styles for page layout */
+  .page {
+    background-color: #C4D3DC;
+    color: #29235C;
+    text-align: center;
+    padding: 50px;
+  }
+  
+  .features-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+  }
+  /* Styles for page layout */
+.page {
+    background-color: #C4D3DC;
+    color: #29235C;
+    text-align: center;
+    padding: 50px;
+  }
+  
+  /* Title style with the desired color */
+  .page h1 {
+    color: #A52727;
+  }
+  
+  
